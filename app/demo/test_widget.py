@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'test1.ui'
+# Form implementation generated from reading ui file 'test_widget.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.1
 #
@@ -14,12 +14,12 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Form(object):
     def setupUi(self, Form):
         Form.setObjectName("Form")
-        Form.resize(408, 335)
+        Form.resize(575, 481)
         font = QtGui.QFont()
         font.setFamily("宋体")
         font.setPointSize(12)
         Form.setFont(font)
-        Form.setStyleSheet("border-image: url(:/background/img/test11.png);")
+        Form.setStyleSheet("border-image: url(:/背景图/test3.png);")
         self.verticalLayout_2 = QtWidgets.QVBoxLayout(Form)
         self.verticalLayout_2.setObjectName("verticalLayout_2")
         spacerItem = QtWidgets.QSpacerItem(20, 40, QtWidgets.QSizePolicy.Minimum, QtWidgets.QSizePolicy.Expanding)
@@ -42,6 +42,7 @@ class Ui_Form(object):
         self.lineEdit.setObjectName("lineEdit")
         self.horizontalLayout.addWidget(self.lineEdit)
         self.label_7 = QtWidgets.QLabel(Form)
+        self.label_7.setText("")
         self.label_7.setObjectName("label_7")
         self.horizontalLayout.addWidget(self.label_7)
         self.verticalLayout.addLayout(self.horizontalLayout)
@@ -55,30 +56,35 @@ class Ui_Form(object):
         self.lineEdit_2.setObjectName("lineEdit_2")
         self.horizontalLayout_2.addWidget(self.lineEdit_2)
         self.label_8 = QtWidgets.QLabel(Form)
+        self.label_8.setText("")
         self.label_8.setObjectName("label_8")
         self.horizontalLayout_2.addWidget(self.label_8)
         self.verticalLayout.addLayout(self.horizontalLayout_2)
         self.horizontalLayout_4 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_4.setObjectName("horizontalLayout_4")
         self.label_2 = QtWidgets.QLabel(Form)
+        self.label_2.setText("")
         self.label_2.setObjectName("label_2")
         self.horizontalLayout_4.addWidget(self.label_2)
         self.radioButton = QtWidgets.QRadioButton(Form)
         self.radioButton.setObjectName("radioButton")
         self.horizontalLayout_4.addWidget(self.radioButton)
         self.label_4 = QtWidgets.QLabel(Form)
+        self.label_4.setText("")
         self.label_4.setObjectName("label_4")
         self.horizontalLayout_4.addWidget(self.label_4)
         self.verticalLayout.addLayout(self.horizontalLayout_4)
         self.horizontalLayout_5 = QtWidgets.QHBoxLayout()
         self.horizontalLayout_5.setObjectName("horizontalLayout_5")
         self.label_5 = QtWidgets.QLabel(Form)
+        self.label_5.setText("")
         self.label_5.setObjectName("label_5")
         self.horizontalLayout_5.addWidget(self.label_5)
         self.pushButton = QtWidgets.QPushButton(Form)
         self.pushButton.setObjectName("pushButton")
         self.horizontalLayout_5.addWidget(self.pushButton)
         self.label_6 = QtWidgets.QLabel(Form)
+        self.label_6.setText("")
         self.label_6.setObjectName("label_6")
         self.horizontalLayout_5.addWidget(self.label_6)
         self.verticalLayout.addLayout(self.horizontalLayout_5)
@@ -90,19 +96,14 @@ class Ui_Form(object):
         self.verticalLayout_2.addItem(spacerItem3)
 
         self.retranslateUi(Form)
+        self.pushButton.clicked.connect(Form.show_mainwindow)
         QtCore.QMetaObject.connectSlotsByName(Form)
 
     def retranslateUi(self, Form):
         _translate = QtCore.QCoreApplication.translate
         Form.setWindowTitle(_translate("Form", "Form"))
         self.label.setText(_translate("Form", "用户名"))
-        self.label_7.setText(_translate("Form", "             "))
         self.label_3.setText(_translate("Form", "密  码"))
-        self.label_8.setText(_translate("Form", "             "))
-        self.label_2.setText(_translate("Form", "         "))
         self.radioButton.setText(_translate("Form", "记住用户名和密码"))
-        self.label_4.setText(_translate("Form", "         "))
-        self.label_5.setText(_translate("Form", "    "))
         self.pushButton.setText(_translate("Form", "登录"))
-        self.label_6.setText(_translate("Form", "                "))
-import test1
+import test11_rc
